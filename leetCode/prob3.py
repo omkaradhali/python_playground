@@ -23,4 +23,6 @@ def lengthOfLongestSubstring(s):
     else:
         return 0
 
+
 print(lengthOfLongestSubstring('dvdf'))
+print(lengthOfLongestSubstring('aabccbb'))
