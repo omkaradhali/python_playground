@@ -31,13 +31,17 @@ def pair_sum(arr, k):
 def pair_sum2(arr, k):
     counter = 0
     lookup = set()
+    result = []
     for num in arr:
         if k-num in lookup:
             counter += 1
+            result.append((num, k-num))
         else:
             lookup.add(num)
+    print(lookup)
+    print(result)
     return counter
-    pass
 
 
-print(pair_sum([1, 3, 2, 2], 2))
+
+print(pair_sum2([1, 3, 2, 2], 4))
