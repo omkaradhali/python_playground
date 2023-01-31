@@ -21,6 +21,7 @@ def top_k_elements(nums: List[int], k: int) -> List[int]:
     c = Counter(nums)
     nums2 = c.most_common(k)
     print(nums2)
+    print(dict(nums2))
     res = []
 
     for idx in range(len(nums2)):
